@@ -1,46 +1,16 @@
-/*=NavBar=*/
 
-nav {
-    width: 100%;
-    background: #fff;
-    border: 1px solid #ccc;
-}
-
-nav ul {
-    overflow: hidden;
-    margin: 0px;
-    padding: 20px;
-}
-
-nav ul li {
-    list-style: none;
-    float: left;
-    text-align: right;
-    width: 100%; /* fallback for non-calc() browsers */
-    width: calc(100% / 1);
-    box-sizing: border-box;
-}
-/*
-nav ul li:first-child {
-    border-left: none;
-    text-align: left;
-}*/
-
-nav ul li a {
-    display: block;
-    text-decoration: none;
-    color: #616161;
-    padding: 10px 0;
-}
+/*=GlobalItems=*/
 
 
-/*=Page=*/
 
 body { 
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #666;
+    padding-top: 82px;
 }
+
+
 h1{
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -62,6 +32,56 @@ img {
     border-radius: 4px;
     padding: 10px;
 }
+
+.clearfix:after { content: ""; display: block; clear:both;
+
+}
+
+
+
+/*=NavBar=*/
+
+#stickyheader{ 
+  position: fixed; top: 0; left: 0; width: 100%;
+  background-color: #ccc;
+
+}
+
+#stickyheader h1{
+  float: left; width: 50%;
+
+}
+
+nav {
+    width: 50%;
+    float: right;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+nav ul {
+    overflow: hidden;
+    margin: 0px;
+    padding: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+    text-align: right;
+    width: 100%; /* fallback for non-calc() browsers */
+    width: calc(100% / 1);
+    box-sizing: border-box;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #616161;
+    padding: 10px 0;
+}
+
+
 
 
 /*=Listitems=*/
@@ -134,11 +154,11 @@ p {
     background: #fff;
 }
 
-header, #research, #review, #organize{
+#research, #review, #organize{
     margin: 5px;
 }
 
-#pagewrap, header, #research, #review, #organize, footer {
+#pagewrap, #research, #review, #organize, footer {
     border: solid 1px #ccc;
     padding: 20px;
 }
@@ -152,12 +172,12 @@ header, #research, #review, #organize{
     margin: auto;
 
 }
-header {
+/*header {
     height: 20px;
     max-width: 100%
     margin: 0px;
 }
-
+*/
 footer {
   font-size: 16px;
   color: #ccc;
@@ -220,7 +240,7 @@ Smaller Screens
         float: none;
     }
 
-    header, footer {
+   footer {
         padding: 1% 4%;
     }
 }
@@ -247,9 +267,7 @@ Smaller Screens
 /* for 480px or less */
 @media screen and (max-width: 480px) {
 
-    header {
-        height: auto;
-    }
+  
     h1 {
         font-size: 2em;
     }

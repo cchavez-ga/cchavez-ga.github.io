@@ -1,0 +1,258 @@
+/*fonts, element selectors, classes, id's*/
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace');
+
+
+body{
+    background-color: #f2EEE2;
+    font-size: 16px; /*1em = 16px*/
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+}
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5em;
+    position: relative;
+}
+
+h1, h2{
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+}
+
+.site-header{
+    /*background-color: #EFEFEF;*/
+    background-image: url('../img/stardust_@2X.png');
+    background-repeat: repeat;
+}
+
+
+.site-body p{
+    color:#5A5A5A;
+    font-size: 16px;
+}
+
+.site-footer p{
+    color:#5A5A5A;
+    font-size: 16px;
+
+}
+
+.logo-masthead {
+    background: #fff url('../img/cascade icons/logo-masthead.png');
+    width:256px;
+    height:256px;
+}
+
+.logo {
+    background:url('../img/cascade icons/logo-small-bg.png');
+}
+
+.highlights {
+    margin: 15px auto;
+    text-align: center;
+}
+
+.masthead {
+    background-color: #EFEFEF;
+    background-image: url('../img/squairy_light_@2X.png');
+    background-repeat: repeat;
+}
+
+.masthead .slogan  p{
+    color:#5A5A5A;
+    font-size: 24px;
+    width:600px;
+}               
+
+.masthead .slogan {
+    color: #FF3B3F;
+    margin-top:20px;
+    font-size: 40px;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.masthead .slogan .sub {
+    color: #A9A9A9;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/*.logo:hover {
+    background:url('../img/cascade icons/logo-small-bg-selected.png');
+}*/
+
+/*.powered-by {
+    background:url('../img/cascade icons/powered-by.png');
+    width:150px;
+    height:56px;
+    display:block;
+}
+*/
+.col width-1of3{
+    width:33.333%;
+}
+.leuven {
+    width:48%;
+    max-width: 400px !important;
+    float: right;
+}
+
+.narrow .site-header,.narrow .site-body {
+    -webkit-border-top-left-radius:8px;
+    -moz-border-radius-topleft:8px;
+    border-top-left-radius:8px;
+    -webkit-border-top-right-radius:8px;
+    -moz-border-radius-topright:8px;
+    border-top-right-radius:8px;
+
+}
+
+.narrow .site-center .site-body {
+    -webkit-border-bottom-left-radius:8px;
+    -moz-border-radius-bottomleft:8px;
+    border-bottom-left-radius:8px;
+    -webkit-border-bottom-right-radius:8px;
+    -moz-border-radius-bottomright:8px;
+    border-bottom-right-radius:8px;
+}
+
+.template-header h2 {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#sociallogos {
+    float:right;
+    width:130px;
+}
+
+#sociallogos a:hover {
+    text-decoration: none;
+}
+
+.sitemenutags {
+    float:right;
+    _width:145px;
+}
+
+.sitemenutags .nav li {
+    border:0;
+    margin:0;
+}
+
+.sitemenutags .nav a:hover {
+    color:#A9A9A9;
+    background:#FFF;
+}
+
+.centered-content .content {
+    width:75%;
+}
+
+.centered-content input {
+    width:95%;
+    width:55px;
+}
+
+.centered-content label {
+    float: right;
+}
+
+@media (max-width:979px) {
+
+.leuven {
+    margin: 0 auto;
+    float: none !important;
+    width: 100%;
+}
+
+.template-header {
+    text-align: center;
+}
+
+.template-header h2 {
+        display: inline-block;
+}
+
+.sitemenutags {
+        float:left;
+    }
+
+.sitemenu {
+        display:block;
+        clear:both;
+    }
+
+.centered-content .content {
+        width: 100%;
+    }
+
+.centered-content label {
+        float: left;
+    }
+}
+
+.site-body{
+    max-width: 100%;
+}
+
+.sitemenu-responsive {
+    display:none !important;
+}
+
+.sitemenu-responsive .left {
+    position: fixed;
+    background: #fff;
+    overflow: hidden;
+    width:100%;
+    bottom:0;
+    top:0;
+    margin-top: 55px;
+    border-color: #999;
+    border-width: 2px 0 0 0;
+    opacity: 0.95;
+}
+
+.site-footer{
+    width:100%;
+    height:256px;
+    background-image: url('../img/subtle_carbon_@2X.png');
+    background-repeat: repeat;
+
+}
+
+
+.sitemenu-responsive .icon-align-justify {
+    margin:0 !important;
+}
+
+.site-header,.sitemenu-responsive,.sitemenu-responsive .left {
+    z-index:900;	
+}
+
+@media (max-width:580px) {
+    .col.sitemenu {
+        display:none !important;
+    }
+
+    .sitemenu-responsive {
+        display:block !important;
+    }
+
+    .sitemenu-responsive .collapse-trigger a {
+        padding: 4px 6px 0;
+    }
+
+    .sitemenutags {
+        position: absolute;
+        right: 0;
+    }
+}
