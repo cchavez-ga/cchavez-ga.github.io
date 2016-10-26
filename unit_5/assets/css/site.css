@@ -97,7 +97,7 @@ span{
     margin: 1em auto;
     text-align: center;
     float: left;
-    background-color: green;
+ /*   background-color: green;*/
 }
 
 .template-header h2 {
