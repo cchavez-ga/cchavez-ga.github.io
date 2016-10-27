@@ -37,7 +37,7 @@ li{
 }
 
 
-span{
+span, h2{
    color: gray;
 }
 
@@ -109,6 +109,9 @@ span{
     text-align: center;
 }
 
+.site-center {
+    font-size: 1em;
+}
 
 .site-body{
     max-width: 100%;
