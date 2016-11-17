@@ -6,11 +6,11 @@
 
 /**{
     border: 1px solid red !important;
-}
-*/
+}*/
+
 
 body{
-    padding-top: 100px;
+    padding-top: 5em;
     font-size: 16px; /*1em = 16px*/
     font-family: 'Work+Sans', sans-serif;
     position: relative;
@@ -20,10 +20,11 @@ body{
 
 p{
     font-family: 'Work+Sans', sans-serif;
+    font-size: 1em;
     line-height: 1.5em;
     position: relative;
-    padding-bottom: 5px;
-    margin-bottom: 5px; 
+    padding-bottom: 1em;
+    margin-bottom: 1em; 
 }
 
 h1{
@@ -35,85 +36,64 @@ h1{
 
 h2,h3, h4, h5, h6{
     font-size: 2em;
-    line-height: 1.5em;
+    line-height: 2em;
     font-family:'Shadows Into Light Two', cursive;
     position: relative;
 }
 
 nav{
     font-family: sans-serif;
-    font-size: 1.2em; 
+    font-size: 1em; 
     font-family: 'Work+Sans', sans-serif;
-    background-color: #d2d2d2;
+    background-color: #F2F1EF;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 }
 
-main-nav{
-    font-family: 'Work+Sans', sans-serif;
-    list-style: none;
-    text-align: left;
-    margin:0;
-    padding:0;
-    
+
+.container{
+	margin-left: 2em;
+	margin-right: 2em;
 }
+
+.login{
+    background-color: #F2F1EF;
+}
+
 
 .main-nav li{
+    background-color: #F2F1EF;
     font-family: 'Work+Sans', sans-serif;
     display: inline-block;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 2em;
+    padding-bottom: 1.2em;
+    margin-left: 1em;
+	margin-right: 1em;
 }
 
 .main-nav a{
+    background-color: #F2F1EF;
     display:inline-block;
     text-decoration: none;
-    padding-top: 0px;
-    padding-bottom: 10px;
-    margin-right: 10px;
-    margin-left:10px;
-    color: #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-left:0;
+    color: #333;
     
-}
-
-.site-header{
-    position: fixed;
-    z-index: 99999;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
 }
 
 .login{
     float: right;
 }
 
- .slogan {
-    color: #FF3B3F;
-    margin-top:10px;
-    font-family: 'Shadows Into Light Two', cursive;
-    font-size: 40px;
-    line-height: 100%;
-    font-weight: 700;
-    padding: 10px;
-}
-
-.sub {
-    color: #5A5A5A;
-    font-family: 'Work+Sans', sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-}
-
-.template-header h2 {
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-.site-body p{
-    color:#5A5A5A;
-    font-size: 16px;
-    background-color: #fff;
-    max-width: 100%;
+.site-header{
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F2F1EF;
 }
 
 .module {
@@ -132,34 +112,114 @@ main-nav{
 }
 
 .site-footer {
-    width:100%;
+    font-size: 1em; 
     text-align: center;
-    background-color: #d2d2d2;
-    height: 50px;
+    background-color: #F2F1EF;
+    height: 5em;
 }
 
-.leuven {
-    width:48%;
-    max-width: 400px !important;
-    float: right;
-    margin: 0px 10px 0px 0px;
-    width: 100%;
+@media only screen and (max-width:803px){
+	body {
+		padding-top: 20em;
+}
+	nav{
+    	font-family: sans-serif;
+    	font-size: 1em; 
+    	font-family: 'Work+Sans', sans-serif;
+    	background-color: #F2F1EF;
+    	padding-left: 2em;
+    	padding-right: 2em;
+}
+	.main-nav li{
+    	font-family: 'Work+Sans', sans-serif;
+    	display: block;
+    	padding-top: 0;
+    	padding-bottom: 0;
 }
 
-@media (max-width:979px) {
+	.main-nav a{
+    	display:block;
+    	text-decoration: none;
+    	padding-top: 1em;
+    	padding-bottom: 1em;
+    	margin-right: 0;
+    	margin-left:0;
+    	color: #333;
+    
+}
+	.login{
+    	float: left;
+        background-color: #F2F1EF;
+}
+}
+@media only screen and (max-width:600px){
+	body {
+		padding-top: 20em;
+}
+	nav{
+    	font-family: sans-serif;
+    	font-size: 1em; 
+    	font-family: 'Work+Sans', sans-serif;
+    	background-color: #F2F1EF;
+    	padding-left: 2em;
+    	padding-right: 2em;
+}
+	.main-nav li{
+    	font-family: 'Work+Sans', sans-serif;
+    	display: block;
+    	padding-top: 0;
+    	padding-bottom: 0;
 
-.leuven {
-    margin: 0 auto;
-    float: none !important;
-    width: 100%;
 }
 
-@media screen (max-width:640px) {
-
-{
-    width: 100%; 
+	.main-nav a{
+    	display:block;
+    	text-decoration: none;
+    	padding-top: 1em;
+    	padding-bottom: 1em;
+    	margin-right: 0;
+    	margin-left:0;
+    	color: #333;
+    
+}
+	.login{
+    	float: left;
+        background-color: #F2F1EF;
+}
 }
 
+@media only screen and (max-width:480px){
+    body {
+        padding-top: 20em;
+}
+    nav{
+        font-family: sans-serif;
+        font-size: 1em; 
+        font-family: 'Work+Sans', sans-serif;
+        background-color: #F2F1EF;
+        padding-left: 2em;
+        padding-right: 2em;
+}
+    .main-nav li{
+        font-family: 'Work+Sans', sans-serif;
+        display: block;
+        padding-top: 0;
+        padding-bottom: 0;
 
+}
 
-
+    .main-nav a{
+        display:block;
+        text-decoration: none;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin-right: 0;
+        margin-left:0;
+        color: #333;
+    
+}
+    .login{
+        float: left;
+        background-color: #F2F1EF;
+}
+}
